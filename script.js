@@ -1,7 +1,7 @@
 
 javascript: (function () {
-    
 var bing = "http://www.bing.com/search?q=";
+console.log("%cBing Auto Searcher by Sathvik", "font-size: 30px; color: cyan; font-style: italic; font-weight: bold;");
 
 const searchTerms = [
 "dogs",
@@ -27,12 +27,12 @@ const searchTerms = [
 "MacBook",
 "Bing",
 ];
-
-
+console.log("%cSearchTerms Loaded", "font-size: 30px; color: cyan; font-style: italic; font-weight: bold;");
 
 
 
 var searchTerm = searchTerms[Math.floor(Math.random() * searchTerms.length)];
+console.log("%cSearchTerms will now be randomly selected and opened in new tabs", "font-size: 30px; color: cyan; font-style: italic; font-weight: bold;");
 
 var i = 0;
 var interval = setInterval(function () {
@@ -50,4 +50,3 @@ i++;
 , 3000);
 }
 )();
-
