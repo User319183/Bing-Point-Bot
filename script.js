@@ -1,6 +1,7 @@
-javascript: (function () {
 
-const bing = "http://www.bing.com/search?q=";
+javascript: (function () {
+    
+var bing = "http://www.bing.com/search?q=";
 
 const searchTerms = [
 "dogs",
@@ -28,14 +29,17 @@ const searchTerms = [
 ];
 
 
-const searchTerm = searchTerms[Math.floor(Math.random() * searchTerms.length)];
 
-let i = 0;
-const interval = setInterval(function () {
+
+
+var searchTerm = searchTerms[Math.floor(Math.random() * searchTerms.length)];
+
+var i = 0;
+var interval = setInterval(function () {
 if (i == 10) {
 clearInterval(interval);
 }
-const newTab = window.open(bing + searchTerm, "_blank");
+var newTab = window.open(bing + searchTerm, "_blank");
 setTimeout(function () {
 newTab.close();
 }
@@ -46,3 +50,4 @@ i++;
 , 3000);
 }
 )();
+
